@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Connect - Healthcare Staffing Made Simple</title>
+    <meta name="description" content="Connect healthcare facilities with qualified professionals. Simple. Fast. Reliable.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/css/simple.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="heart-pulse"></i>
+                </div>
+                <span>Clinical Connect</span>
+            </a>
+            
+            <div class="nav-links">
+                <a href="#facilities" class="nav-link">Facilities</a>
+                <a href="#professionals" class="nav-link">Professionals</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#login" class="btn btn-outline">Sign In</a>
+            </div>
+            
+            <button class="nav-toggle" id="nav-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">Your trusted healthcare staffing partner</h1>
+            <p class="hero-subtitle">We provide qualified temporary healthcare professionals to keep your facility fully staffed. From RNs to specialists, we handle the sourcing, vetting, and placement.</p>
+            
+            <div class="hero-buttons">
+                <a href="#facilities" class="btn btn-primary btn-large">
+                    <i data-lucide="building-2"></i>
+                    Request Staff
+                </a>
+                <a href="#professionals" class="btn btn-outline btn-large">
+                    <i data-lucide="user-check"></i>
+                    Join Our Team
+                </a>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">2,000+</div>
+                    <div class="stat-label">Qualified Professionals</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Client Facilities</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24hrs</div>
+                    <div class="stat-label">Average Response Time</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Facilities -->
+    <section class="section" id="facilities">
+        <div class="container">
+            <div class="section-content">
+                <div>
+                    <h2>We find the staff you need</h2>
+                    <p>Tell us your staffing requirements and we'll provide qualified, vetted healthcare professionals. Our dedicated account managers handle everything from sourcing to placement.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit">
+                            <i data-lucide="users"></i>
+                            <div>
+                                <h3>Extensive talent network</h3>
+                                <p>Access to thousands of pre-qualified professionals</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="shield-check"></i>
+                            <div>
+                                <h3>Full credentialing service</h3>
+                                <p>We handle all licensing, background checks, and verification</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="headphones"></i>
+                            <div>
+                                <h3>Dedicated account support</h3>
+                                <p>Your personal account manager ensures smooth operations</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#get-started" class="btn btn-primary">Request Staff</a>
+                </div>
+                
+                <div>
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">Staffing Request</div>
+                            <div class="form-field">
+                                <label>Position Needed</label>
+                                <select>
+                                    <option value="">Select position...</option>
+                                    <option value="rn">Registered Nurse</option>
+                                    <option value="lpn">Licensed Practical Nurse</option>
+                                    <option value="cna">Certified Nursing Assistant</option>
+                                    <option value="rt">Respiratory Therapist</option>
+                                    <option value="pt">Physical Therapist</option>
+                                    <option value="ot">Occupational Therapist</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label>When</label>
+                                <select>
+                                    <option value="">Select timeframe...</option>
+                                    <option value="asap">ASAP - Within 1 week</option>
+                                    <option value="2weeks">Within 2 weeks</option>
+                                    <option value="month">Within 1 month</option>
+                                    <option value="flexible">Flexible timing</option>
+                                </select>
+                            </div>
+                            <div class="form-field">
+                                <label>Duration</label>
+                                <select>
+                                    <option value="">Select duration...</option>
+                                    <option value="1week">1 week</option>
+                                    <option value="2weeks">2 weeks</option>
+                                    <option value="1month">1 month</option>
+                                    <option value="3months">3 months</option>
+                                    <option value="6months">6 months</option>
+                                    <option value="ongoing">Ongoing</option>
+                                </select>
+                            </div>
+                            <button class="app-btn">Submit Request</button>
+                            <div class="app-note">We'll respond within 24 hours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Professionals -->
+    <section class="section section-alt" id="professionals">
+        <div class="container">
+            <div class="section-content">
+                <div>
+                    <div class="shift-cards">
+                        <div class="shift-card featured">
+                            <div class="shift-header">
+                                <h4>ICU Nurse</h4>
+                                <span class="shift-rate">$52/hr</span>
+                            </div>
+                            <div class="shift-details">
+                                <div class="shift-info">
+                                    <i data-lucide="map-pin"></i>
+                                    <span>Downtown Medical Center</span>
+                                </div>
+                                <div class="shift-info">
+                                    <i data-lucide="calendar"></i>
+                                    <span>3-month assignment</span>
+                                </div>
+                            </div>
+                            <div style="background: #f0fdf4; padding: 12px; border-radius: 8px; font-size: 14px; color: #15803d;">
+                                ✓ Placed by Clinical Connect
+                            </div>
+                        </div>
+                        
+                        <div class="shift-card">
+                            <div class="shift-header">
+                                <h4>OR Tech</h4>
+                                <span class="shift-rate">$38/hr</span>
+                            </div>
+                            <div class="shift-details">
+                                <div class="shift-info">
+                                    <i data-lucide="map-pin"></i>
+                                    <span>City Hospital</span>
+                                </div>
+                                <div class="shift-info">
+                                    <i data-lucide="calendar"></i>
+                                    <span>6-week assignment</span>
+                                </div>
+                            </div>
+                            <div style="background: #f0fdf4; padding: 12px; border-radius: 8px; font-size: 14px; color: #15803d;">
+                                ✓ Placed by Clinical Connect
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2>Join our team of professionals</h2>
+                    <p>Apply to join Clinical Connect and we'll match you with premium assignments at top healthcare facilities. We handle the business side so you can focus on patient care.</p>
+                    
+                    <div class="benefits">
+                        <div class="benefit">
+                            <i data-lucide="briefcase"></i>
+                            <div>
+                                <h3>Premium assignments</h3>
+                                <p>Work at top-tier healthcare facilities</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="trending-up"></i>
+                            <div>
+                                <h3>Competitive compensation</h3>
+                                <p>Market-leading rates plus benefits</p>
+                            </div>
+                        </div>
+                        <div class="benefit">
+                            <i data-lucide="user-check"></i>
+                            <div>
+                                <h3>Dedicated support</h3>
+                                <p>Personal recruiter and ongoing career support</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#apply" class="btn btn-primary">Apply to Join</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2>How it works</h2>
+                <p style="font-size: 18px; color: #6b7280; max-width: 600px; margin: 0 auto;">Simple steps to connect healthcare facilities with professionals</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>You request staff</h3>
+                    <p>Tell us your staffing needs and requirements</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>We find & vet</h3>
+                    <p>Our team sources and screens qualified professionals</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>We deliver</h3>
+                    <p>Qualified staff arrives ready to work at your facility</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Clinical Connect has been our go-to staffing partner for over two years. They consistently provide high-quality nurses who integrate seamlessly into our team."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong><br>
+                        <span>Chief Nursing Officer, Regional Medical Center</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"Working with Clinical Connect has been fantastic. They found me great assignments at excellent facilities, and their support team is always there when I need them."</p>
+                    <div class="testimonial-author">
+                        <strong>Marcus R.</strong><br>
+                        <span>Registered Nurse, Clinical Connect Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div>
+                    <h2>Ready to partner with us?</h2>
+                    <p>Whether you need staff for your facility or want to join our team of healthcare professionals, we're here to help.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <strong>Call us</strong>
+                                <span>1-800-CLINICAL</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>hello@clinicalconnect.net</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email address" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">I am interested in...</option>
+                                <option value="facility">Requesting staff for my facility</option>
+                                <option value="professional">Joining your team as a healthcare professional</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="How can we help?" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i data-lucide="heart-pulse"></i>
+                        </div>
+                        <span>Clinical Connect</span>
+                    </a>
+                    <p>Healthcare staffing made simple.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Facilities</h4>
+                        <a href="#">Post jobs</a>
+                        <a href="#">How it works</a>
+                        <a href="#">Pricing</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Professionals</h4>
+                        <a href="#">Find work</a>
+                        <a href="#">Get started</a>
+                        <a href="#">Mobile app</a>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <a href="#">Help center</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Clinical Connect. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">HIPAA Compliant</span>
+                    <span class="badge">SOC 2 Certified</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+            
+            // Handle staffing request form
+            const staffingForm = document.querySelector('.phone-screen');
+            const submitBtn = staffingForm?.querySelector('.app-btn');
+            
+            if (submitBtn) {
+                submitBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const position = staffingForm.querySelector('select').value;
+                    const when = staffingForm.querySelectorAll('select')[1].value;
+                    const duration = staffingForm.querySelectorAll('select')[2].value;
+                    
+                    if (!position || !when || !duration) {
+                        alert('Please fill in all fields to submit your staffing request.');
+                        return;
+                    }
+                    
+                    // Update button to show success
+                    submitBtn.textContent = 'Request Submitted!';
+                    submitBtn.style.backgroundColor = '#10b981';
+                    
+                    // Update note
+                    const note = staffingForm.querySelector('.app-note');
+                    note.textContent = 'Thank you! We will contact you within 24 hours.';
+                    note.style.color = '#10b981';
+                    
+                    // Reset after 3 seconds
+                    setTimeout(() => {
+                        submitBtn.textContent = 'Submit Request';
+                        submitBtn.style.backgroundColor = '#0d9488';
+                        note.textContent = "We'll respond within 24 hours";
+                        note.style.color = '#6b7280';
+                    }, 3000);
+                });
+            }
+        });
+    </script>
+</body>
+</html>

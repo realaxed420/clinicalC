@@ -1,0 +1,205 @@
+/* ===================================
+   Enhanced Text Contrast Fix
+   =================================== */
+
+/* Override all text colors for better contrast */
+:root {
+  /* Enhanced text colors for better readability */
+  --text-primary: #111827;     /* Very dark gray for maximum contrast */
+  --text-secondary: #1f2937;   /* Dark gray for secondary text */
+  --text-muted: #374151;       /* Medium-dark gray for muted text */
+  --text-light: #4b5563;       /* Lighter but still readable gray */
+}
+
+/* Force better contrast on all text elements */
+body {
+  color: var(--text-primary) !important;
+}
+
+p {
+  color: var(--text-primary) !important;
+}
+
+.hero__description {
+  color: var(--text-primary) !important;
+}
+
+.section-subtitle {
+  color: var(--text-primary) !important;
+}
+
+.service-description {
+  color: var(--text-primary) !important;
+}
+
+.content-intro {
+  color: var(--text-primary) !important;
+}
+
+.benefit-content p {
+  color: var(--text-primary) !important;
+}
+
+.about-story p {
+  color: var(--text-primary) !important;
+}
+
+.trust-label {
+  color: var(--text-secondary) !important;
+}
+
+.popular-label {
+  color: var(--text-secondary) !important;
+}
+
+.stat-label {
+  color: var(--text-secondary) !important;
+}
+
+.trust-badge span {
+  color: var(--text-secondary) !important;
+}
+
+.form-header p {
+  color: var(--text-primary) !important;
+}
+
+.audience-panel p {
+  color: var(--text-primary) !important;
+}
+
+/* Navigation text contrast */
+.nav__link {
+  color: var(--text-secondary) !important;
+}
+
+.nav__link:hover,
+.nav__link.active-link {
+  color: var(--primary-blue) !important;
+}
+
+/* Form labels and text */
+.form-group label {
+  color: var(--text-primary) !important;
+}
+
+.checkbox-label {
+  color: var(--text-primary) !important;
+}
+
+/* Ensure all secondary text is readable */
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+/* Fix any remaining low-contrast text */
+.service-features li {
+  color: var(--text-primary) !important;
+}
+
+.job-details {
+  color: var(--text-primary) !important;
+}
+
+.metric-label {
+  color: var(--text-secondary) !important;
+}
+
+.feature-content p {
+  color: var(--text-primary) !important;
+}
+
+.value-item p {
+  color: var(--text-primary) !important;
+}
+
+.contact-method p {
+  color: var(--text-primary) !important;
+}
+
+.method-content p {
+  color: var(--text-primary) !important;
+}
+
+/* Input placeholder text */
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+  color: var(--text-muted) !important;
+  opacity: 1;
+}
+
+/* Focus and hover states for better visibility */
+.input-group input:focus,
+.input-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-blue) !important;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2) !important;
+}
+
+/* Button text contrast */
+.btn--outline {
+  color: var(--primary-blue) !important;
+}
+
+.btn--secondary {
+  color: var(--text-primary) !important;
+}
+
+.btn--ghost {
+  color: var(--text-primary) !important;
+}
+
+/* Filter and search elements */
+.filter-btn {
+  color: var(--text-primary) !important;
+}
+
+.popular-tag {
+  color: var(--text-primary) !important;
+}
+
+/* Ensure dropdown content is readable */
+.dropdown-content a {
+  color: var(--text-primary) !important;
+}
+
+.dropdown-content a:hover {
+  color: var(--primary-blue) !important;
+}
+
+/* Footer text contrast improvements */
+.footer-links a {
+  color: var(--gray-300) !important;
+}
+
+.footer-links a:hover {
+  color: var(--white) !important;
+}
+
+.copyright p {
+  color: var(--gray-300) !important;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --text-primary: #000000 !important;
+    --text-secondary: #000000 !important;
+    --text-muted: #333333 !important;
+    --border-light: #666666 !important;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    color: #000000 !important;
+  }
+  
+  .btn--outline {
+    border-width: 3px !important;
+    color: #000000 !important;
+  }
+}
